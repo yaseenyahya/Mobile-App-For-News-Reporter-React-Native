@@ -1,0 +1,4 @@
+Keystore: android-YGnwj.keystore
+Keystore password: 1g09SkTsZOZ2ySlH
+Key alias: keyalias
+Key password: 1g09SkTsZOZ2ySlH

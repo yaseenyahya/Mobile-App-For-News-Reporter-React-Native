@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">610357659848-scjloal6qh1dmjid616au7dmk532q5nj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://fastapp-f9391.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">610357659848</string>
+    <string name="google_api_key" translatable="false">AIzaSyArEv3BMbmA1kY-pKU8EuVrhRAWehksaaw</string>
+    <string name="google_app_id" translatable="false">1:610357659848:android:4f69d6f1bd1bc2ce94fdfd</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyArEv3BMbmA1kY-pKU8EuVrhRAWehksaaw</string>
+    <string name="google_storage_bucket" translatable="false">fastapp-f9391.appspot.com</string>
+    <string name="project_id" translatable="false">fastapp-f9391</string>
+</resources>

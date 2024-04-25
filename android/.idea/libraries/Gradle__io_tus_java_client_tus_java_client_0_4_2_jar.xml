@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: io.tus.java.client:tus-java-client:0.4.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.tus.java.client/tus-java-client/0.4.2/f6231e6434473dbbd82048e699240cf6ca46a4cf/tus-java-client-0.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.tus.java.client/tus-java-client/0.4.2/4d4339f45be7557b319b81a31ddf2c91b9983424/tus-java-client-0.4.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.tus.java.client/tus-java-client/0.4.2/d8702b0b61fb86965f81e6b7da9c4d39906f77fc/tus-java-client-0.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

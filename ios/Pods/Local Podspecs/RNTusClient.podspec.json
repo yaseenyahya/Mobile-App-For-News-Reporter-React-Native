@@ -1,0 +1,27 @@
+{
+  "name": "RNTusClient",
+  "version": "1.1.0",
+  "summary": "React Native client for the tus resumable upload protocol https://tus.io/",
+  "requires_arc": true,
+  "license": "MIT",
+  "homepage": "https://github.com/vinzscam/react-native-tus-client",
+  "authors": {
+    "Vincenzo Scamporlino": "vincenzo@scamporlino.it"
+  },
+  "source": {
+    "git": "https://github.com/vinzscam/react-native-tus-client",
+    "tag": "v#{s.version}"
+  },
+  "source_files": "ios/*.{h,m}",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "dependencies": {
+    "React-Core": [
+
+    ],
+    "TUSKit": [
+
+    ]
+  }
+}

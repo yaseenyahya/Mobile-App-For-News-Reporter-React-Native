@@ -1,0 +1,1278 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.vrexperts.fastapp"
+4    android:versionCode="5"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="22"
+8-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml
+10
+11    <permission
+11-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:7:3-9:42
+12        android:name="com.vrexperts.fastapp.permission.C2D_MESSAGE"
+12-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:8:5-64
+13        android:protectionLevel="signature" />
+13-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:9:5-40
+14
+15    <!-- These are required permissions to make the app run -->
+16    <uses-permission android:name="com.vrexperts.fastapp.permission.C2D_MESSAGE" />
+16-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:12:3-82
+16-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:12:20-79
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:13:3-80
+17-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:13:20-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:14:3-77
+18-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:14:20-74
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:15:3-65
+19-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:15:20-62
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:16:3-76
+20-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:16:20-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:17:3-66
+21-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:17:20-63
+22
+23    <!-- ADD PERMISSIONS HERE -->
+24    <!-- BEGIN OPTIONAL PERMISSIONS -->
+25    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+25-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:21:3-73
+25-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:21:20-70
+26    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+26-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:22:3-78
+26-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:22:20-75
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+27-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:23:3-73
+27-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:23:20-70
+28    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+28-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:24:3-72
+28-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:24:20-69
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:25:3-64
+29-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:25:20-61
+30    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+30-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:26:3-86
+30-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:26:20-83
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:27:3-78
+31-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:27:20-75
+32
+33    <!-- These require runtime permissions on M -->
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:30:3-79
+34-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:30:20-76
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:31:3-77
+35-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:31:20-74
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:32:3-63
+36-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:32:20-60
+37    <uses-permission android:name="android.permission.READ_CONTACTS" />
+37-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:33:3-70
+37-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:33:20-67
+38    <uses-permission android:name="android.permission.READ_CALENDAR" />
+38-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:34:3-70
+38-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:34:20-67
+39    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+39-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:35:3-71
+39-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:35:20-68
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+40-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:36:3-78
+40-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:36:20-75
+41    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+41-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:37:3-69
+41-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:37:20-66
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:38:3-79
+42-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:38:20-76
+43    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+43-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:39:3-71
+43-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:39:20-68
+44    <!-- END OPTIONAL PERMISSIONS -->
+45
+46
+47    <!-- ADD TEST PERMISSIONS HERE -->
+48
+49    <uses-feature
+49-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:44:3-77
+50        android:glEsVersion="0x00020000"
+50-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:44:17-49
+51        android:required="true" />
+51-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:44:50-74
+52    <uses-feature
+52-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:45:3-85
+53        android:name="android.software.leanback"
+53-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:45:17-57
+54        android:required="false" />
+54-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:45:58-82
+55    <uses-feature
+55-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:46:3-88
+56        android:name="android.hardware.touchscreen"
+56-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:46:17-60
+57        android:required="false" />
+57-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:46:61-85
+58
+59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+60    <supports-screens
+60-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:13:5-19:24
+61        android:anyDensity="true"
+61-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:14:9-34
+62        android:largeScreens="true"
+62-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:15:9-36
+63        android:normalScreens="true"
+63-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:16:9-37
+64        android:smallScreens="true"
+64-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:17:9-36
+65        android:xlargeScreens="true" >
+65-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:18:9-37
+66    </supports-screens>
+67
+68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" /> <!-- Used by react-native-netinfo module -->
+68-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:26:5-80
+68-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:26:22-77
+69    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+69-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:34:5-76
+69-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:34:22-73
+70
+71    <uses-feature
+71-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:47:5-49:36
+72        android:name="android.hardware.camera"
+72-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:48:9-47
+73        android:required="false" />
+73-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:49:9-33
+74    <uses-feature
+74-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:50:5-52:36
+75        android:name="android.hardware.camera.autofocus"
+75-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:51:9-57
+76        android:required="false" />
+76-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:52:9-33
+77    <uses-feature
+77-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:53:5-55:36
+78        android:name="android.hardware.location"
+78-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:54:9-49
+79        android:required="false" />
+79-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:55:9-33
+80    <uses-feature
+80-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:56:5-58:36
+81        android:name="android.hardware.location.gps"
+81-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:57:9-53
+82        android:required="false" />
+82-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:58:9-33
+83    <uses-feature
+83-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:59:5-61:36
+84        android:name="android.hardware.location.network"
+84-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:60:9-57
+85        android:required="false" />
+85-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:61:9-33
+86    <uses-feature
+86-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:62:5-64:36
+87        android:name="android.hardware.wifi"
+87-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:63:9-45
+88        android:required="false" />
+88-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:64:9-33
+89    <uses-feature
+89-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:65:5-67:36
+90        android:name="android.hardware.microphone"
+90-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:66:9-51
+91        android:required="false" />
+91-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:67:9-33
+92    <uses-feature
+92-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:68:5-70:36
+93        android:name="android.hardware.telephony"
+93-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:69:9-50
+94        android:required="false" />
+94-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:70:9-33
+95    <uses-feature
+95-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:71:5-73:36
+96        android:name="android.hardware.bluetooth"
+96-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:72:9-50
+97        android:required="false" />
+97-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:73:9-33
+98
+99    <uses-permission android:name="android.permission.STORAGE" />
+99-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-66
+99-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-63
+100    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+100-->[:expo-location] D:\React native projects\FastApp\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
+100-->[:expo-location] D:\React native projects\FastApp\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
+101    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- for android -->
+101-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:5-110
+101-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:22-107
+102    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+104    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+105    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+106    <!-- for Samsung -->
+107    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+107-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:19:5-86
+107-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:19:22-83
+108    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+108-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:20:5-87
+108-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:20:22-84
+109    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+109-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:23:5-81
+109-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:23:22-78
+110    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+110-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:24:5-83
+110-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:24:22-80
+111    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+111-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:27:5-88
+111-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:27:22-85
+112    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+112-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:30:5-84
+112-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:30:22-81
+113    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+113-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:33:5-83
+113-->[me.leolin:ShortcutBadger:1.1.4] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\dd44d6dca430fddc25756188e590b806\ShortcutBadger-1.1.4\AndroidManifest.xml:33:22-80
+114    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:15:5-98
+114-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:15:22-95
+115    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:16:5-94
+115-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:16:22-91
+116
+117    <application
+117-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:48:3-380:17
+118        android:name="host.exp.exponent.MainApplication"
+118-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:49:5-36
+119        android:allowBackup="true"
+119-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:50:5-31
+120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+120-->[androidx.core:core:1.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\37791d22cdf73b5c35c92eb9addd3f27\core-1.1.0\AndroidManifest.xml:24:18-86
+121        android:debuggable="true"
+122        android:icon="@mipmap/ic_launcher"
+122-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:51:5-39
+123        android:label="@string/app_name"
+123-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:52:5-37
+124        android:largeHeap="true"
+124-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:53:5-29
+125        android:supportsRtl="true"
+125-->[com.facebook.android:facebook-android-sdk:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\36d8e97a0dea5ca0c54825784f11758c\facebook-android-sdk-5.0.1\AndroidManifest.xml:28:18-44
+126        android:usesCleartextTraffic="true" >
+126-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:55:5-40
+127        <activity
+127-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:57:5-62:16
+128            android:name="host.exp.exponent.LauncherActivity"
+128-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:58:7-39
+129            android:exported="true"
+129-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:59:7-30
+130            android:launchMode="singleTask"
+130-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:60:7-38
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+131-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:61:7-66
+132        </activity>
+133        <activity
+133-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:64:5-69:16
+134            android:name="host.exp.exponent.experience.ExperienceActivity"
+134-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:65:7-52
+135            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+135-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:66:7-77
+136            android:theme="@style/Theme.Exponent.Light"
+136-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:67:7-50
+137            android:windowSoftInputMode="adjustResize" >
+137-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:68:7-49
+138        </activity>
+139        <activity
+139-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:70:1-88:16
+140            android:name="host.exp.exponent.ShareActivity"
+140-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:71:7-36
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+141-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:73:7-77
+142            android:theme="@style/Theme.Exponent.Splash"
+142-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:74:7-51
+143            android:windowSoftInputMode="adjustResize" >
+143-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:75:7-49
+144            <intent-filter>
+144-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:77:9-85:26
+145                <action android:name="android.intent.action.SEND_MULTIPLE" />
+145-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:78:11-72
+145-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:78:19-69
+146                <action android:name="android.intent.action.SEND" />
+146-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:79:17-69
+146-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:79:25-66
+147
+148                <category android:name="android.intent.category.DEFAULT" />
+148-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+148-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+149
+150                <data android:mimeType="*/*" />
+150-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+150-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:23-45
+151            </intent-filter>
+152
+153            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+154        </activity>
+155        <activity
+155-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:89:5-110:16
+156            android:name="host.exp.exponent.MainActivity"
+156-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:90:7-35
+157            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+157-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:92:7-77
+158            android:launchMode="singleTask"
+158-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:91:7-38
+159            android:theme="@style/AppTheme"
+159-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:93:7-38
+160            android:windowSoftInputMode="adjustResize" >
+160-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:94:7-49
+161            <intent-filter>
+161-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:95:7-102:23
+162                <data android:scheme="exp58dee0118acb4bf2b023822264336a3d" />
+162-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+162-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+163
+164                <action android:name="android.intent.action.VIEW" />
+164-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+164-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+165
+166                <category android:name="android.intent.category.DEFAULT" />
+166-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+166-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+167                <category android:name="android.intent.category.BROWSABLE" />
+167-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+167-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+168            </intent-filter>
+169            <intent-filter>
+169-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:104:7-108:23
+170                <action android:name="android.intent.action.MAIN" />
+170-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:105:9-60
+170-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:105:17-58
+171
+172                <category android:name="android.intent.category.LAUNCHER" />
+172-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:107:9-68
+172-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:107:19-66
+173            </intent-filter>
+174            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+175        </activity>
+176        <activity
+176-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:112:5-118:16
+177            android:name="host.exp.exponent.experience.HomeActivity"
+177-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:113:7-46
+178            android:label="@string/app_name"
+178-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:114:7-39
+179            android:launchMode="singleTask"
+179-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:115:7-38
+180            android:screenOrientation="portrait"
+180-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:116:7-43
+181            android:theme="@style/Theme.Exponent.Light" >
+181-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:117:7-50
+182        </activity>
+183        <activity
+183-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:120:5-129:15
+184            android:name="host.exp.exponent.experience.TvActivity"
+184-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:121:7-44
+185            android:label="@string/app_name"
+185-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:122:7-39
+186            android:screenOrientation="landscape"
+186-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:124:7-44
+187            android:theme="@style/Theme.Exponent.Light" >
+187-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:123:7-50
+188            <intent-filter>
+188-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:125:6-128:22
+189                <action android:name="android.intent.action.MAIN" />
+189-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:105:9-60
+189-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:105:17-58
+190
+191                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+191-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:127:8-77
+191-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:127:18-74
+192            </intent-filter>
+193        </activity>
+194        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+194-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:133:5-81
+194-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:133:15-79
+195        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+196        <!-- ADD DEV SETTINGS HERE -->
+197        <!-- BEGIN_SDK_36 -->
+198        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+198-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:137:5-91
+198-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:137:15-89
+199        <!-- END_SDK_36 -->
+200        <!-- BEGIN_SDK_35 -->
+201        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+201-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:140:5-91
+201-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:140:15-89
+202        <!-- END_SDK_35 -->
+203        <!-- BEGIN_SDK_34 -->
+204        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+204-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:143:5-91
+204-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:143:15-89
+205        <!-- END_SDK_34 -->
+206        <!-- BEGIN_SDK_33 -->
+207        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+207-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:146:5-91
+207-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:146:15-89
+208        <!-- END_SDK_33 -->
+209        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+210
+211        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+211-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:150:5-159:16
+211-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:151:9-70
+212            <intent-filter>
+212-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:153:7-158:23
+213                <action android:name="android.intent.action.VIEW" />
+213-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+213-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+214
+215                <category android:name="android.intent.category.DEFAULT" />
+215-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+215-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+216                <category android:name="android.intent.category.BROWSABLE" />
+216-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+216-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+217
+218                <data
+218-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+219                    android:path="oauthredirect"
+219-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:157:54-82
+220                    android:scheme="com.vrexperts.fastapp" />
+220-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+221            </intent-filter>
+222        </activity>
+223
+224        <!-- START OF STRIPE SCHEMES -->
+225        <activity
+225-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:162:5-173:16
+226            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+226-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:165:9-72
+227            android:exported="true"
+227-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:163:9-32
+228            android:launchMode="singleTask"
+228-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:164:9-40
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+229-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:166:9-79
+230            <intent-filter>
+230-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:167:9-172:25
+231                <action android:name="android.intent.action.VIEW" />
+231-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+231-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+232
+233                <category android:name="android.intent.category.DEFAULT" />
+233-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+233-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+234                <category android:name="android.intent.category.BROWSABLE" />
+234-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+234-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+235
+236                <data android:scheme="expo.modules.payments.stripe.4964cfee-18ad-4385-8e28-52ea5584f89e" />
+236-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+236-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+237            </intent-filter>
+238        </activity>
+239        <!-- Versioned Activity for Stripe -->
+240        <!-- BEGIN_SDK_36 -->
+241        <activity
+241-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:176:5-187:16
+242            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+242-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:179:7-80
+243            android:exported="true"
+243-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:177:7-30
+244            android:launchMode="singleTask"
+244-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:178:7-38
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+245-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:180:7-77
+246            <intent-filter>
+246-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:181:7-186:23
+247                <action android:name="android.intent.action.VIEW" />
+247-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+247-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+249-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+250-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+251
+252                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+252-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+252-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+253            </intent-filter>
+254        </activity>
+255        <!-- END_SDK_36 -->
+256        <!-- BEGIN_SDK_35 -->
+257        <activity
+257-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:190:3-201:14
+258            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+258-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:193:4-77
+259            android:exported="true"
+259-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:191:4-27
+260            android:launchMode="singleTask"
+260-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:192:4-35
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+261-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:194:4-74
+262            <intent-filter>
+262-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:195:4-200:20
+263                <action android:name="android.intent.action.VIEW" />
+263-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+263-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+264
+265                <category android:name="android.intent.category.DEFAULT" />
+265-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+265-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+266                <category android:name="android.intent.category.BROWSABLE" />
+266-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+266-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+267
+268                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+268-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+268-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+269            </intent-filter>
+270        </activity>
+271        <!-- END_SDK_35 -->
+272        <!-- BEGIN_SDK_34 -->
+273        <activity
+273-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:204:5-215:16
+274            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+274-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:207:7-80
+275            android:exported="true"
+275-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:205:7-30
+276            android:launchMode="singleTask"
+276-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:206:7-38
+277            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+277-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:208:7-77
+278            <intent-filter>
+278-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:209:7-214:23
+279                <action android:name="android.intent.action.VIEW" />
+279-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+279-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+280
+281                <category android:name="android.intent.category.DEFAULT" />
+281-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+281-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+282                <category android:name="android.intent.category.BROWSABLE" />
+282-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+282-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+283
+284                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+284-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+284-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+285            </intent-filter>
+286        </activity>
+287        <!-- END_SDK_34 -->
+288        <!-- BEGIN_SDK_33 -->
+289        <activity
+289-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:218:5-229:16
+290            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+290-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:221:7-80
+291            android:exported="true"
+291-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:219:7-30
+292            android:launchMode="singleTask"
+292-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:220:7-38
+293            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+293-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:222:7-77
+294            <intent-filter>
+294-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:223:7-228:23
+295                <action android:name="android.intent.action.VIEW" />
+295-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:9-60
+295-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:98:17-58
+296
+297                <category android:name="android.intent.category.DEFAULT" />
+297-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:17-76
+297-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:81:27-73
+298                <category android:name="android.intent.category.BROWSABLE" />
+298-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:9-69
+298-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:101:19-67
+299
+300                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+300-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:83:17-48
+300-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:96:15-67
+301            </intent-filter>
+302        </activity>
+303        <!-- END_SDK_33 -->
+304        <!-- END OF STRIPE SCHEMES -->
+305
+306        <activity
+306-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:233:5-237:16
+307            android:name="host.exp.exponent.experience.ErrorActivity"
+307-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:234:7-47
+308            android:screenOrientation="portrait"
+308-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:236:7-43
+309            android:theme="@style/Theme.Exponent.Dark" >
+309-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:235:7-49
+310        </activity>
+311        <activity
+311-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:239:5-243:16
+312            android:name="host.exp.exponent.experience.InfoActivity"
+312-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:240:7-46
+313            android:screenOrientation="portrait"
+313-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:241:7-43
+314            android:theme="@style/Theme.Exponent.Light" >
+314-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:242:7-50
+315        </activity>
+316        <activity
+316-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:245:5-250:39
+317            android:name="com.facebook.FacebookActivity"
+317-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:246:7-51
+318            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+318-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:247:7-90
+319            android:label="@string/app_name"
+319-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:248:7-39
+320            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+320-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:249:7-66
+321        <activity
+321-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:252:5-256:69
+322            android:name="com.facebook.ads.InterstitialAdActivity"
+322-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:253:7-61
+323            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+323-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:254:7-90
+324            android:label="@string/app_name"
+324-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:255:7-39
+325            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+325-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:256:7-66
+326
+327        <service
+327-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:258:5-260:34
+328            android:name="host.exp.exponent.ExponentIntentService"
+328-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:259:7-44
+329            android:exported="false" />
+329-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:260:7-31
+330
+331        <!-- Analytics -->
+332        <receiver
+332-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:263:5-269:16
+333            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+333-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:264:7-72
+334            android:exported="true" >
+334-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:265:7-30
+335            <intent-filter>
+335-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:266:7-268:23
+336                <action android:name="com.android.vending.INSTALL_REFERRER" />
+336-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:9-71
+336-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:17-68
+337            </intent-filter>
+338        </receiver>
+339
+340        <!--
+341    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+342    TODO: turn it back on when it's fixed
+343    <service
+344      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+345      android:enabled="true"
+346      android:exported="false" />
+347        -->
+348
+349        <receiver
+349-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:279:5-284:16
+350            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+350-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:279:15-80
+351            android:enabled="true"
+351-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:280:15-37
+352            android:exported="false" >
+352-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:33:13-37
+353            <intent-filter>
+353-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:281:7-283:23
+354                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+354-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:282:9-86
+354-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:282:17-83
+355            </intent-filter>
+356        </receiver>
+357
+358        <service
+358-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:286:5-288:40
+359            android:name="com.google.android.gms.analytics.AnalyticsService"
+359-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:286:14-78
+360            android:enabled="true"
+360-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:287:14-36
+361            android:exported="false" />
+361-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:288:14-38
+362
+363        <!-- GCM -->
+364        <receiver
+364-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:291:5-301:16
+365            android:name="com.google.android.gms.gcm.GcmReceiver"
+365-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:292:7-60
+366            android:exported="true"
+366-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:293:7-30
+367            android:permission="com.google.android.c2dm.permission.SEND" >
+367-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:294:7-67
+368            <intent-filter>
+368-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:295:7-300:23
+369                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+369-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:9-72
+369-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:17-70
+370                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+370-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:297:9-77
+370-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:297:17-75
+371
+372                <category android:name="com.vrexperts.fastapp" />
+372-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:299:9-57
+372-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:299:19-55
+373            </intent-filter>
+374        </receiver>
+375
+376        <service
+376-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:303:5-309:15
+377            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+377-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:304:7-53
+378            android:exported="false" >
+378-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:305:7-31
+379            <intent-filter>
+379-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:306:7-308:23
+380                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+380-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:9-72
+380-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:17-70
+381            </intent-filter>
+382        </service>
+383        <service
+383-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:310:5-316:15
+384            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+384-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:311:7-60
+385            android:exported="false" >
+385-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:312:7-31
+386            <intent-filter>
+386-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:313:7-315:23
+387                <action android:name="com.google.android.gms.iid.InstanceID" />
+387-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:314:9-71
+387-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:314:17-69
+388            </intent-filter>
+389        </service>
+390        <service
+390-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:317:5-320:15
+391            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+391-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:318:7-55
+392            android:exported="false" >
+392-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:319:7-31
+393        </service>
+394
+395        <!-- FCM -->
+396        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+396-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:323:5-328:15
+396-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:324:7-50
+397            <intent-filter>
+397-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:325:7-327:23
+398                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+398-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:326:9-69
+398-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:326:17-67
+399            </intent-filter>
+400        </service>
+401
+402        <meta-data
+402-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:329:5-331:62
+403            android:name="com.google.firebase.messaging.default_notification_icon"
+403-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:330:7-77
+404            android:resource="@drawable/shell_notification_icon" />
+404-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:331:7-59
+405        <meta-data
+405-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:332:5-334:47
+406            android:name="com.google.firebase.messaging.default_notification_color"
+406-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:333:7-78
+407            android:resource="@color/colorAccent" />
+407-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:334:7-44
+408
+409        <service
+409-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:335:5-338:15
+410            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+410-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:336:7-55
+411            android:exported="false" >
+411-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:337:7-31
+412        </service>
+413
+414        <!-- ImagePicker native module -->
+415        <activity
+415-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:341:5-344:16
+416            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+416-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:342:7-70
+417            android:theme="@style/Base.Theme.AppCompat" >
+417-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:343:7-50
+418        </activity>
+419
+420        <!-- ADD FABRIC CONFIG HERE -->
+421        <!-- BEGIN FABRIC CONFIG -->
+422        <meta-data
+422-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:349:5-351:65
+423            android:name="io.fabric.ApiKey"
+423-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:350:7-38
+424            android:value="a25fafe9f9edee11a9882b32e0cd7a26df6e2c42" />
+424-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:351:7-63
+425        <!-- END FABRIC CONFIG -->
+426
+427
+428        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+429        <!-- BEGIN GOOGLE MAPS CONFIG -->
+430        <meta-data
+430-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:356:5-358:64
+431            android:name="com.google.android.geo.API_KEY"
+431-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:357:7-52
+432            android:value="AIzaSyDh7eDB9snEFSYtf-k0gfxA45HFoR0L--I" />
+432-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:358:7-62
+433        <!-- END GOOGLE MAPS CONFIG -->
+434
+435
+436        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+437        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+438        <meta-data
+438-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:363:5-365:63
+439            android:name="com.google.android.gms.ads.APPLICATION_ID"
+439-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:364:7-63
+440            android:value="ca-app-pub-3940256099942544~3347511713" />
+440-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:365:7-61
+441        <meta-data
+441-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:366:5-107
+442            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+442-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:366:16-84
+443            android:value="true" />
+443-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:366:85-105
+444        <!-- END GOOGLE MOBILE ADS CONFIG -->
+445
+446
+447        <!-- ADD BRANCH CONFIG HERE -->
+448
+449
+450        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+451        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+452        <!-- Tags below need to be in one line with no whitespace after android:value -->
+453        <!-- in order for XDL to be able to replace values in them -->
+454        <meta-data
+454-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:375:5-95
+455            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+455-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:375:16-71
+456            android:value="false" />
+456-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:375:72-93
+457        <meta-data
+457-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:376:5-87
+458            android:name="com.facebook.sdk.AutoInitEnabled"
+458-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:376:16-63
+459            android:value="false" />
+459-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:376:64-85
+460        <meta-data
+460-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:377:5-101
+461            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+461-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:377:16-77
+462            android:value="false" />
+462-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:377:78-99
+463        <meta-data
+463-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:379:5-109
+464            android:name="standaloneStripeScheme"
+464-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:379:16-53
+465            android:value="4964cfee-18ad-4385-8e28-52ea5584f89e" />
+465-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:379:54-106
+466        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+467        <!-- Scheduled notifications -->
+468        <receiver
+468-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:79:9-81:40
+469            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+469-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:80:13-89
+470            android:exported="false" />
+470-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:81:13-37
+471        <receiver
+471-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:82:9-92:20
+472            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+472-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:83:13-95
+473            android:exported="true" >
+473-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:84:13-36
+474            <intent-filter>
+474-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:85:13-91:29
+475                <action android:name="android.intent.action.REBOOT" />
+475-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:86:17-71
+475-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:86:25-68
+476                <action android:name="android.intent.action.BOOT_COMPLETED" />
+476-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:87:17-79
+476-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:87:25-76
+477                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+477-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:88:17-81
+477-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:88:25-78
+478                <action android:name="android.intent.action.TIME_CHANGED" />
+478-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:89:17-77
+478-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:89:25-74
+479                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+479-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:90:17-82
+479-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:90:25-79
+480            </intent-filter>
+481        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+482        <provider
+482-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:96:9-104:20
+483            android:name="androidx.core.content.FileProvider"
+483-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:97:13-62
+484            android:authorities="com.vrexperts.fastapp.provider"
+484-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:98:13-60
+485            android:exported="false"
+485-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:99:13-37
+486            android:grantUriPermissions="true" >
+486-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:100:13-47
+487            <meta-data
+487-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+488                android:name="android.support.FILE_PROVIDER_PATHS"
+488-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+489                android:resource="@xml/provider_paths" />
+489-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+490        </provider>
+491        <provider
+491-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:105:9-113:20
+492            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+492-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:106:13-109
+493            android:authorities="com.vrexperts.fastapp.fileprovider"
+493-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:107:13-64
+494            android:exported="false"
+494-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:108:13-37
+495            android:grantUriPermissions="true" >
+495-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:109:13-47
+496            <meta-data
+496-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+497                android:name="android.support.FILE_PROVIDER_PATHS"
+497-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+498                android:resource="@xml/provider_paths" />
+498-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+499        </provider>
+500        <provider
+500-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-27:20
+501            android:name="expo.modules.filesystem.FileSystemFileProvider"
+501-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+502            android:authorities="com.vrexperts.fastapp.FileSystemFileProvider"
+502-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-74
+503            android:exported="false"
+503-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-37
+504            android:grantUriPermissions="true" >
+504-->[:expo-file-system] D:\React native projects\FastApp\node_modules\expo-file-system\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-47
+505            <meta-data
+505-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+506                android:name="android.support.FILE_PROVIDER_PATHS"
+506-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+507                android:resource="@xml/file_system_provider_paths" />
+507-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+508        </provider> <!-- https://developer.android.com/guide/topics/manifest/provider-element.html -->
+509        <provider
+509-->[:expo-image-picker] D:\React native projects\FastApp\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-22:20
+510            android:name="expo.modules.imagepicker.ImagePickerFileProvider"
+510-->[:expo-image-picker] D:\React native projects\FastApp\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-76
+511            android:authorities="com.vrexperts.fastapp.ImagePickerFileProvider"
+511-->[:expo-image-picker] D:\React native projects\FastApp\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-75
+512            android:exported="false"
+512-->[:expo-image-picker] D:\React native projects\FastApp\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-37
+513            android:grantUriPermissions="true" >
+513-->[:expo-image-picker] D:\React native projects\FastApp\node_modules\expo-image-picker\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-47
+514            <meta-data
+514-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+515                android:name="android.support.FILE_PROVIDER_PATHS"
+515-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+516                android:resource="@xml/image_picker_provider_paths" />
+516-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+517        </provider>
+518
+519        <service
+519-->[:expo-location] D:\React native projects\FastApp\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-18:40
+520            android:name="expo.modules.location.services.LocationTaskService"
+520-->[:expo-location] D:\React native projects\FastApp\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-78
+521            android:exported="false" />
+521-->[:expo-location] D:\React native projects\FastApp\node_modules\expo-location\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+522
+523        <provider
+523-->[:expo-sharing] D:\React native projects\FastApp\node_modules\expo-sharing\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
+524            android:name="expo.modules.sharing.SharingFileProvider"
+524-->[:expo-sharing] D:\React native projects\FastApp\node_modules\expo-sharing\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-68
+525            android:authorities="com.vrexperts.fastapp.SharingFileProvider"
+525-->[:expo-sharing] D:\React native projects\FastApp\node_modules\expo-sharing\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-71
+526            android:exported="false"
+526-->[:expo-sharing] D:\React native projects\FastApp\node_modules\expo-sharing\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+527            android:grantUriPermissions="true" >
+527-->[:expo-sharing] D:\React native projects\FastApp\node_modules\expo-sharing\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
+528            <meta-data
+528-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:101:13-103:58
+529                android:name="android.support.FILE_PROVIDER_PATHS"
+529-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:102:17-67
+530                android:resource="@xml/sharing_provider_paths" />
+530-->[host.exp.exponent:expoview:36.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\6fcbc246a29c77a89d7e23de7fa64893\expoview-36.0.0\AndroidManifest.xml:103:17-55
+531        </provider>
+532
+533        <activity android:name="com.facebook.CustomTabMainActivity" />
+533-->[com.facebook.android:facebook-common:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\b0942c004ca8b33120b7712fdc163053\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:9-71
+533-->[com.facebook.android:facebook-common:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\b0942c004ca8b33120b7712fdc163053\jetified-facebook-common-5.0.1\AndroidManifest.xml:33:19-68
+534        <activity android:name="com.facebook.CustomTabActivity" />
+534-->[com.facebook.android:facebook-common:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\b0942c004ca8b33120b7712fdc163053\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:9-67
+534-->[com.facebook.android:facebook-common:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\b0942c004ca8b33120b7712fdc163053\jetified-facebook-common-5.0.1\AndroidManifest.xml:34:19-64
+535        <activity
+535-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:15:9-18:40
+536            android:name="com.facebook.ads.AudienceNetworkActivity"
+536-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:16:13-68
+537            android:configChanges="keyboardHidden|orientation|screenSize"
+537-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:17:13-74
+538            android:exported="false" />
+538-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:18:13-37
+539        <activity
+539-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:19:9-23:39
+540            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+540-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:20:13-74
+541            android:configChanges="keyboardHidden|orientation|screenSize"
+541-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:21:13-74
+542            android:exported="false"
+542-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:22:13-37
+543            android:process=":adnw" />
+543-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:23:13-36
+544
+545        <service
+545-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:25:9-27:40
+546            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+546-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:26:13-83
+547            android:exported="false" />
+547-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:27:13-37
+548        <service
+548-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:28:9-31:39
+549            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+549-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:29:13-77
+550            android:exported="false"
+550-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:30:13-37
+551            android:process=":adnw" />
+551-->[com.facebook.android:audience-network-sdk:5.1.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\93da777d4501d0f66c41e177852a9db1\jetified-audience-network-sdk-5.1.1\AndroidManifest.xml:31:13-36
+552        <service
+552-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:40:9-44:72
+553            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+553-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:41:13-80
+554            android:enabled="true"
+554-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:42:13-35
+555            android:exported="false"
+555-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:43:13-37
+556            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+556-->[com.google.android.gms:play-services-analytics:16.0.8] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\0ac740026000cc0e88a66dbb3fa2fa64\jetified-play-services-analytics-16.0.8\AndroidManifest.xml:44:13-69
+557        <uses-library
+557-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\4af8d7bc11f2c4fdcd47bffc935ccd40\jetified-play-services-maps-16.1.0\AndroidManifest.xml:33:9-35:40
+558            android:name="org.apache.http.legacy"
+558-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\4af8d7bc11f2c4fdcd47bffc935ccd40\jetified-play-services-maps-16.1.0\AndroidManifest.xml:34:13-50
+559            android:required="false" />
+559-->[com.google.android.gms:play-services-maps:16.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\4af8d7bc11f2c4fdcd47bffc935ccd40\jetified-play-services-maps-16.1.0\AndroidManifest.xml:35:13-37
+560
+561        <activity
+561-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+562            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+562-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+563            android:excludeFromRecents="true"
+563-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+564            android:exported="false"
+564-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+565            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+565-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+566        <!--
+567            Service handling Google Sign-In user revocation. For apps that do not integrate with
+568            Google Sign-In, this service will never be started.
+569        -->
+570        <service
+570-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+571            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+571-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+572            android:exported="true"
+572-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+573            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+573-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\e1be931629116d7dc55fd763fba195ee\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+574        <!--
+575             FirebaseMessagingService performs security checks at runtime,
+576             but set to not exported to explicitly avoid allowing another app to call it.
+577        -->
+578        <service
+578-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\a849670df78b43970a5ccd633de8954c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:28:9-34:19
+579            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+579-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\a849670df78b43970a5ccd633de8954c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:29:13-82
+580            android:exported="false" >
+580-->[com.google.firebase:firebase-messaging:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\a849670df78b43970a5ccd633de8954c\jetified-firebase-messaging-18.0.0\AndroidManifest.xml:30:13-37
+581            <intent-filter android:priority="-500" >
+581-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:325:7-327:23
+582                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+582-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:326:9-69
+582-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:326:17-67
+583            </intent-filter>
+584        </service>
+585        <service
+585-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:27:9-33:19
+586            android:name="com.google.firebase.components.ComponentDiscoveryService"
+586-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:28:13-84
+587            android:exported="false" >
+587-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:29:13-37
+588            <meta-data
+588-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:30:13-32:85
+589                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+589-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:31:17-139
+590                android:value="com.google.firebase.components.ComponentRegistrar" />
+590-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c19e70422b09bc49f32d625efb6efbb9\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:32:17-82
+591            <meta-data
+591-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:32:13-34:85
+592                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+592-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:33:17-96
+593                android:value="com.google.firebase.components.ComponentRegistrar" />
+593-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:34:17-82
+594        </service>
+595
+596        <receiver
+596-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:37:9-44:20
+597            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+597-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:38:13-78
+598            android:exported="true"
+598-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:39:13-36
+599            android:permission="com.google.android.c2dm.permission.SEND" >
+599-->[com.google.firebase:firebase-iid:18.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c13efc8057d45d8182afadfb15d900c1\jetified-firebase-iid-18.0.0\AndroidManifest.xml:40:13-73
+600            <intent-filter>
+600-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:306:7-308:23
+601                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+601-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:9-72
+601-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:296:17-70
+602            </intent-filter>
+603        </receiver>
+604
+605        <activity
+605-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c7701e1271ee06566536c867477c931a\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+606            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+606-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c7701e1271ee06566536c867477c931a\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+607            android:exported="false"
+607-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c7701e1271ee06566536c867477c931a\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+608            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+608-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\c7701e1271ee06566536c867477c931a\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+609
+610        <provider
+610-->[com.google.firebase:firebase-common:17.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\16705c728d80250cbd7bdd4112d14db2\jetified-firebase-common-17.0.0\AndroidManifest.xml:12:9-16:39
+611            android:name="com.google.firebase.provider.FirebaseInitProvider"
+611-->[com.google.firebase:firebase-common:17.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\16705c728d80250cbd7bdd4112d14db2\jetified-firebase-common-17.0.0\AndroidManifest.xml:13:13-77
+612            android:authorities="com.vrexperts.fastapp.firebaseinitprovider"
+612-->[com.google.firebase:firebase-common:17.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\16705c728d80250cbd7bdd4112d14db2\jetified-firebase-common-17.0.0\AndroidManifest.xml:14:13-72
+613            android:exported="false"
+613-->[com.google.firebase:firebase-common:17.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\16705c728d80250cbd7bdd4112d14db2\jetified-firebase-common-17.0.0\AndroidManifest.xml:15:13-37
+614            android:initOrder="100" />
+614-->[com.google.firebase:firebase-common:17.0.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\16705c728d80250cbd7bdd4112d14db2\jetified-firebase-common-17.0.0\AndroidManifest.xml:16:13-36
+615
+616        <receiver
+616-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:29:9-33:20
+617            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+617-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:30:13-85
+618            android:enabled="true"
+618-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:31:13-35
+619            android:exported="false" >
+619-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:32:13-37
+620        </receiver>
+621        <receiver
+621-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:34:9-42:20
+622            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+622-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:35:13-100
+623            android:enabled="true"
+623-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:36:13-35
+624            android:exported="true"
+624-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:37:13-36
+625            android:permission="android.permission.INSTALL_PACKAGES" >
+625-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:38:13-69
+626            <intent-filter>
+626-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:266:7-268:23
+627                <action android:name="com.android.vending.INSTALL_REFERRER" />
+627-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:9-71
+627-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:17-68
+628            </intent-filter>
+629        </receiver>
+630
+631        <service
+631-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:44:9-47:40
+632            android:name="com.google.android.gms.measurement.AppMeasurementService"
+632-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:45:13-84
+633            android:enabled="true"
+633-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:46:13-35
+634            android:exported="false" />
+634-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:47:13-37
+635        <service
+635-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:48:9-52:72
+636            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+636-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:49:13-87
+637            android:enabled="true"
+637-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:50:13-35
+638            android:exported="false"
+638-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:51:13-37
+639            android:permission="android.permission.BIND_JOB_SERVICE" />
+639-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\524e30a5ab87706c5806772628ea48c1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:52:13-69
+640
+641        <meta-data
+641-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\14284f84b4ba994b0f3e2a9dd93a1322\jetified-play-services-basement-16.2.0\AndroidManifest.xml:23:9-25:69
+642            android:name="com.google.android.gms.version"
+642-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\14284f84b4ba994b0f3e2a9dd93a1322\jetified-play-services-basement-16.2.0\AndroidManifest.xml:24:13-58
+643            android:value="@integer/google_play_services_version" />
+643-->[com.google.android.gms:play-services-basement:16.2.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\14284f84b4ba994b0f3e2a9dd93a1322\jetified-play-services-basement-16.2.0\AndroidManifest.xml:25:13-66
+644
+645        <activity
+645-->[net.openid:appauth:0.7.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\f5405155eafc679525819f57175b51e5\jetified-appauth-0.7.1\AndroidManifest.xml:27:9-31:75
+646            android:name="net.openid.appauth.AuthorizationManagementActivity"
+646-->[net.openid:appauth:0.7.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\f5405155eafc679525819f57175b51e5\jetified-appauth-0.7.1\AndroidManifest.xml:28:13-78
+647            android:exported="false"
+647-->[net.openid:appauth:0.7.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\f5405155eafc679525819f57175b51e5\jetified-appauth-0.7.1\AndroidManifest.xml:29:13-37
+648            android:launchMode="singleTask"
+648-->[net.openid:appauth:0.7.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\f5405155eafc679525819f57175b51e5\jetified-appauth-0.7.1\AndroidManifest.xml:30:13-44
+649            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+649-->[net.openid:appauth:0.7.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\f5405155eafc679525819f57175b51e5\jetified-appauth-0.7.1\AndroidManifest.xml:31:13-72
+650
+651        <service
+651-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:19:9-21:40
+652            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+652-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:20:13-132
+653            android:exported="false" />
+653-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:21:13-37
+654        <service
+654-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:22:9-24:40
+655            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+655-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:23:13-127
+656            android:exported="false" />
+656-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:24:13-37
+657        <service
+657-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:25:9-27:40
+658            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+658-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:26:13-120
+659            android:exported="false" />
+659-->[io.nlopez.smartlocation:library:3.2.11] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\599f63a7823319bcebc4fc33f3eeb6a5\jetified-library-3.2.11\AndroidManifest.xml:27:13-37
+660        <service
+660-->[androidx.room:room-runtime:2.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\ccc1f18c7ded2c364cd723bcc5d8c464\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+661            android:name="androidx.room.MultiInstanceInvalidationService"
+661-->[androidx.room:room-runtime:2.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\ccc1f18c7ded2c364cd723bcc5d8c464\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+662            android:exported="false" />
+662-->[androidx.room:room-runtime:2.1.0] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\ccc1f18c7ded2c364cd723bcc5d8c464\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+663        <!--
+664         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+665         with the application context. This config is merged in with the host app's manifest,
+666         but there can only be one provider with the same authority activated at any given
+667         point; so if the end user has two or more different apps that use Facebook SDK, only the
+668         first one will be able to use the provider. To work around this problem, we use the
+669         following placeholder in the authority to identify each host application as if it was
+670         a completely different provider.
+671        -->
+672        <provider
+672-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:39:9-42:40
+673            android:name="com.facebook.internal.FacebookInitProvider"
+673-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:40:13-70
+674            android:authorities="com.vrexperts.fastapp.FacebookInitProvider"
+674-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:41:13-72
+675            android:exported="false" />
+675-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:42:13-37
+676
+677        <receiver
+677-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:44:9-50:20
+678            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+678-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:45:13-86
+679            android:exported="false" >
+679-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:46:13-37
+680            <intent-filter>
+680-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:47:13-49:29
+681                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+681-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:17-95
+681-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:48:25-92
+682            </intent-filter>
+683        </receiver>
+684        <receiver
+684-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:51:9-58:20
+685            android:name="com.facebook.CampaignTrackingReceiver"
+685-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:52:13-65
+686            android:exported="true"
+686-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:53:13-36
+687            android:permission="android.permission.INSTALL_PACKAGES" >
+687-->[com.facebook.android:facebook-core:5.0.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\27fd950c5aefc74f8a6574360c153e60\jetified-facebook-core-5.0.1\AndroidManifest.xml:54:13-69
+688            <intent-filter>
+688-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:266:7-268:23
+689                <action android:name="com.android.vending.INSTALL_REFERRER" />
+689-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:9-71
+689-->D:\React native projects\FastApp\android\app\src\main\AndroidManifest.xml:267:17-68
+690            </intent-filter>
+691        </receiver>
+692
+693        <provider
+693-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\90f3a55b096cc14e308e7a8ce38a70d9\jetified-crashlytics-2.10.1\AndroidManifest.xml:19:9-23:38
+694            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+694-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\90f3a55b096cc14e308e7a8ce38a70d9\jetified-crashlytics-2.10.1\AndroidManifest.xml:20:13-75
+695            android:authorities="com.vrexperts.fastapp.crashlyticsinitprovider"
+695-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\90f3a55b096cc14e308e7a8ce38a70d9\jetified-crashlytics-2.10.1\AndroidManifest.xml:21:13-75
+696            android:exported="false"
+696-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\90f3a55b096cc14e308e7a8ce38a70d9\jetified-crashlytics-2.10.1\AndroidManifest.xml:22:13-37
+697            android:initOrder="90" />
+697-->[com.crashlytics.sdk.android:crashlytics:2.10.1] C:\Users\tuna\.gradle\caches\transforms-2\files-2.1\90f3a55b096cc14e308e7a8ce38a70d9\jetified-crashlytics-2.10.1\AndroidManifest.xml:23:13-35
+698    </application>
+699
+700</manifest>

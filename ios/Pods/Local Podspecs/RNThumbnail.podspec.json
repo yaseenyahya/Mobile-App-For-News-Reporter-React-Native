@@ -1,0 +1,25 @@
+{
+  "name": "RNThumbnail",
+  "version": "1.0.0",
+  "summary": "RNThumbnail",
+  "description": "RNThumbnail",
+  "homepage": "https://github.com/author/RNThumbnail",
+  "license": "MIT",
+  "authors": {
+    "author": "author@domain.cn"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "git": "https://github.com/author/RNThumbnail.git",
+    "tag": "master"
+  },
+  "source_files": "RNThumbnail/**/*.{h,m}",
+  "requires_arc": true,
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "FastApp+ND",
+    "slug": "FastAppND",
+    "privacy": "public",
+    "sdkVersion": "36.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "7.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/ic_launcher.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#E14425"
+    },
+    "android": {
+      "package": "com.vrexperts.fastapp",
+      "versionCode": 7,
+      "publishBundlePath": "android\\app\\src\\main\\assets\\shell-app.bundle",
+      "publishManifestPath": "android\\app\\src\\main\\assets\\shell-app-manifest.json"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+   
+    "isDetached": true,
+    "detach": {
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.14.0-sdk36.0.0-fb8689e6-fd42-4b18-b01f-ac2ef3bc8681.tar.gz",
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.14.3-sdk36.0.0-00f587c0-b8c9-4b6b-88f6-2ccd4f20dc9c.tar.gz"
+    },
+    "scheme": "exp58dee0118acb4bf2b023822264336a3d"
+  }
+}

@@ -1,0 +1,7 @@
+#Tue Jan 03 13:45:52 PKT 2023
+base.0=D\:\\React native projects\\FastApp\\android\\app\\build\\intermediates\\transforms\\r8\\release\\0\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=D\:\\React native projects\\FastApp\\android\\app\\build\\intermediates\\transforms\\r8\\release\\0\\classes2.dex

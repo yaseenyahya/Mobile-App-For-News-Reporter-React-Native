@@ -1,0 +1,25 @@
+{
+  "name": "react-native-video-helper",
+  "version": "1.4.4",
+  "summary": "React Native Video Helper",
+  "description": "React Native video helper library, to compress and trim videos.",
+  "homepage": "https://github.com/classapp/react-native-video-helper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": "Samin Shams",
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source": {
+    "git": "https://github.com/classapp/react-native-video-helper.git",
+    "tag": "1.4.4"
+  },
+  "source_files": "ios/*.{h,m}",
+  "dependencies": {
+    "React": [
+
+    ]
+  }
+}

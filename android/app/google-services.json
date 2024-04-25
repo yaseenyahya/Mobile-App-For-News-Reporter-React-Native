@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "610357659848",
+    "firebase_url": "https://fastapp-f9391.firebaseio.com",
+    "project_id": "fastapp-f9391",
+    "storage_bucket": "fastapp-f9391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610357659848:android:4f69d6f1bd1bc2ce94fdfd",
+        "android_client_info": {
+          "package_name": "com.vrexperts.fastapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "610357659848-scjloal6qh1dmjid616au7dmk532q5nj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArEv3BMbmA1kY-pKU8EuVrhRAWehksaaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "610357659848-scjloal6qh1dmjid616au7dmk532q5nj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

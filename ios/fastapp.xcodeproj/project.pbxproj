@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0467C74424195900001AA438 /* ShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0467C74324195900001AA438 /* ShareViewController.m */; };
+		0467C74B24195900001AA438 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0467C74024195900001AA438 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0467C74F24195B23001AA438 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0467C74524195900001AA438 /* MainInterface.storyboard */; };
+		0CCBED9F00834D2F88E30F09 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8E0AC1D46E84340A1A2CE13 /* SimpleLineIcons.ttf */; };
+		16B262D00C834C29B2D33E88 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18DD11017FB6428E9344FEA1 /* FontAwesome5_Solid.ttf */; };
+		2932CD8255AE4D43B82411C3 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3092A0FE9AFD4FD0A44275A5 /* MaterialIcons.ttf */; };
+		371439553826482E91AFA88E /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43D0F1C26AAC48E782A70CF3 /* rubicon-icon-font.ttf */; };
+		39B151230AB94DABAB6B6E68 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93C1BDEF500D4679AC188FD6 /* Feather.ttf */; };
+		4F50AF0AF64D48E69D6E1413 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47B216A3AE844A49A716EF4B /* Roboto_medium.ttf */; };
+		64688F468C9A45E2A647058A /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12FF7FCD5A1F4AA7AAF81E3A /* Roboto.ttf */; };
+		6B9C91276C724F9991E2DFCE /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C516977D1A4EF7A844FCCE /* MaterialCommunityIcons.ttf */; };
+		6D49F523215F48A880CA3179 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 978BA74163DE4A6CBDFE1460 /* FontAwesome5_Regular.ttf */; };
+		706CB59EEF284809BA9CC291 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B4F4D94A5024181AA509090 /* Zocial.ttf */; };
+		7F08DF96A0284625AA16B888 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5652900733744FE48430CC92 /* FontAwesome.ttf */; };
+		8F71577B6201403D9ADF9A74 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 357801563531465B861206CA /* Entypo.ttf */; };
+		94DDBA22FCFD4FCA9E85E86E /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DD2A42349740228B942E34 /* Fontisto.ttf */; };
+		95F5673A16CD4B5787722773 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D2590981C85461DB168B249 /* EvilIcons.ttf */; };
+		9A79EC04B6594547942D271B /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA07ABD0E3434B20ACBB6D9F /* AntDesign.ttf */; };
+		B501732B1DC01252003445D9 /* EXShell.plist in Resources */ = {isa = PBXBuildFile; fileRef = B501732A1DC01252003445D9 /* EXShell.plist */; };
+		B56386491DB9693800A0598C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B56386481DB9693800A0598C /* AppDelegate.m */; };
+		B56386511DB9693800A0598C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56386501DB9693800A0598C /* Assets.xcassets */; };
+		B56386611DB96A5E00A0598C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B563865E1DB96A5E00A0598C /* main.m */; };
+		B56386671DB9994300A0598C /* EXSDKVersions.plist in Resources */ = {isa = PBXBuildFile; fileRef = B56386661DB9994300A0598C /* EXSDKVersions.plist */; };
+		B5693E8E1FABD16A00307FA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5693E8D1FABD16A00307FA4 /* LaunchScreen.xib */; };
+		B5693E911FABD46800307FA4 /* launch_background_image.png in Resources */ = {isa = PBXBuildFile; fileRef = B5693E8F1FABD46800307FA4 /* launch_background_image.png */; };
+		B5693E921FABD46800307FA4 /* launch_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B5693E901FABD46800307FA4 /* launch_icon.png */; };
+		B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */; };
+		B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047E1F3A684600E91581 /* shell-app-manifest.json */; };
+		B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B5DB047F1F3A684600E91581 /* shell-app.bundle */; };
+		B8439B49EB5C446E80E51932 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 442C0DA94F7F4C52AFADD844 /* Ionicons.ttf */; };
+		BEF082CCAB5D437B847DFBB0 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 148741625E18484382377921 /* Foundation.ttf */; };
+		EBB8117C1BFA0514F79CAF74 /* libPods-fastapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A88D15726AD99E8A257BC7 /* libPods-fastapp.a */; };
+		F170D1827399447A8F45D4C4 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DD1E0E76B4241B094A69408 /* Octicons.ttf */; };
+		F9B00B6807044F149C3DB935 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB373CBB0ADA4C53BAF37E2D /* FontAwesome5_Brands.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0467C74924195900001AA438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B56386391DB9693800A0598C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0467C73F24195900001AA438;
+			remoteInfo = ShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0467C7232419542F001AA438 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0467C74B24195900001AA438 /* ShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0467C728241954EA001AA438 /* fastapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fastapp.entitlements; sourceTree = "<group>"; };
+		0467C74024195900001AA438 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0467C74224195900001AA438 /* ShareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareViewController.h; sourceTree = "<group>"; };
+		0467C74324195900001AA438 /* ShareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareViewController.m; sourceTree = "<group>"; };
+		0467C74624195900001AA438 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		0467C74824195900001AA438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12FF7FCD5A1F4AA7AAF81E3A /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		148741625E18484382377921 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		18DD11017FB6428E9344FEA1 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		2C1548D9E4CB1AEFA5CCAE6D /* Pods-fastapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastapp/Pods-fastapp.debug.xcconfig"; sourceTree = "<group>"; };
+		3092A0FE9AFD4FD0A44275A5 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		357801563531465B861206CA /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		43D0F1C26AAC48E782A70CF3 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		442C0DA94F7F4C52AFADD844 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		47B216A3AE844A49A716EF4B /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		5652900733744FE48430CC92 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		6C20B50DA8974097A8BD8B8D /* libReactNativeShareExtension.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeShareExtension.a; sourceTree = "<group>"; };
+		6DD1E0E76B4241B094A69408 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		93C1BDEF500D4679AC188FD6 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		978BA74163DE4A6CBDFE1460 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		9B4F4D94A5024181AA509090 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		9D2590981C85461DB168B249 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A47FE4D7F70906B7DC8CE39B /* Pods-fastapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastapp/Pods-fastapp.release.xcconfig"; sourceTree = "<group>"; };
+		A8E0AC1D46E84340A1A2CE13 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		B501732A1DC01252003445D9 /* EXShell.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXShell.plist; sourceTree = "<group>"; };
+		B56386411DB9693800A0598C /* fastapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56386471DB9693800A0598C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B56386481DB9693800A0598C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B56386501DB9693800A0598C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B563865C1DB96A5E00A0598C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B563865E1DB96A5E00A0598C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B56386661DB9994300A0598C /* EXSDKVersions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXSDKVersions.plist; sourceTree = "<group>"; };
+		B5693E8D1FABD16A00307FA4 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		B5693E8F1FABD46800307FA4 /* launch_background_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_background_image.png; sourceTree = "<group>"; };
+		B5693E901FABD46800307FA4 /* launch_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_icon.png; sourceTree = "<group>"; };
+		B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EXBuildConstants.plist; sourceTree = "<group>"; };
+		B5DB047E1F3A684600E91581 /* shell-app-manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "shell-app-manifest.json"; sourceTree = "<group>"; };
+		B5DB047F1F3A684600E91581 /* shell-app.bundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "shell-app.bundle"; sourceTree = "<group>"; };
+		C4A88D15726AD99E8A257BC7 /* libPods-fastapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fastapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5C516977D1A4EF7A844FCCE /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		DA07ABD0E3434B20ACBB6D9F /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		DB373CBB0ADA4C53BAF37E2D /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		F1DD2A42349740228B942E34 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0467C73D24195900001AA438 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B563863E1DB9693800A0598C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB8117C1BFA0514F79CAF74 /* libPods-fastapp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0467C74124195900001AA438 /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0467C74224195900001AA438 /* ShareViewController.h */,
+				0467C74324195900001AA438 /* ShareViewController.m */,
+				0467C74524195900001AA438 /* MainInterface.storyboard */,
+				0467C74824195900001AA438 /* Info.plist */,
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		1A42804E64B7E9E0AB8B6799 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4A88D15726AD99E8A257BC7 /* libPods-fastapp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B29BC350A332C58878A9F13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C1548D9E4CB1AEFA5CCAE6D /* Pods-fastapp.debug.xcconfig */,
+				A47FE4D7F70906B7DC8CE39B /* Pods-fastapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5672E3F240A6C5C008B1D1A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				6C20B50DA8974097A8BD8B8D /* libReactNativeShareExtension.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		ADC6038119C54780A4C5945C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA07ABD0E3434B20ACBB6D9F /* AntDesign.ttf */,
+				357801563531465B861206CA /* Entypo.ttf */,
+				9D2590981C85461DB168B249 /* EvilIcons.ttf */,
+				93C1BDEF500D4679AC188FD6 /* Feather.ttf */,
+				5652900733744FE48430CC92 /* FontAwesome.ttf */,
+				DB373CBB0ADA4C53BAF37E2D /* FontAwesome5_Brands.ttf */,
+				978BA74163DE4A6CBDFE1460 /* FontAwesome5_Regular.ttf */,
+				18DD11017FB6428E9344FEA1 /* FontAwesome5_Solid.ttf */,
+				F1DD2A42349740228B942E34 /* Fontisto.ttf */,
+				148741625E18484382377921 /* Foundation.ttf */,
+				442C0DA94F7F4C52AFADD844 /* Ionicons.ttf */,
+				D5C516977D1A4EF7A844FCCE /* MaterialCommunityIcons.ttf */,
+				3092A0FE9AFD4FD0A44275A5 /* MaterialIcons.ttf */,
+				6DD1E0E76B4241B094A69408 /* Octicons.ttf */,
+				47B216A3AE844A49A716EF4B /* Roboto_medium.ttf */,
+				12FF7FCD5A1F4AA7AAF81E3A /* Roboto.ttf */,
+				43D0F1C26AAC48E782A70CF3 /* rubicon-icon-font.ttf */,
+				A8E0AC1D46E84340A1A2CE13 /* SimpleLineIcons.ttf */,
+				9B4F4D94A5024181AA509090 /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B56386381DB9693800A0598C = {
+			isa = PBXGroup;
+			children = (
+				B56386431DB9693800A0598C /* fastapp */,
+				0467C74124195900001AA438 /* ShareExtension */,
+				B56386421DB9693800A0598C /* Products */,
+				5B29BC350A332C58878A9F13 /* Pods */,
+				1A42804E64B7E9E0AB8B6799 /* Frameworks */,
+				D234B0C24D8145C4A19CE6F1 /* Libraries */,
+				A5672E3F240A6C5C008B1D1A /* Recovered References */,
+				ADC6038119C54780A4C5945C /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		B56386421DB9693800A0598C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B56386411DB9693800A0598C /* fastapp.app */,
+				0467C74024195900001AA438 /* ShareExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B56386431DB9693800A0598C /* fastapp */ = {
+			isa = PBXGroup;
+			children = (
+				0467C728241954EA001AA438 /* fastapp.entitlements */,
+				B56386471DB9693800A0598C /* AppDelegate.h */,
+				B56386481DB9693800A0598C /* AppDelegate.m */,
+				B56386501DB9693800A0598C /* Assets.xcassets */,
+				B563865B1DB96A5E00A0598C /* Supporting */,
+			);
+			path = fastapp;
+			sourceTree = "<group>";
+		};
+		B563865B1DB96A5E00A0598C /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				B5693E8F1FABD46800307FA4 /* launch_background_image.png */,
+				B5693E901FABD46800307FA4 /* launch_icon.png */,
+				B5693E8D1FABD16A00307FA4 /* LaunchScreen.xib */,
+				B5DB047E1F3A684600E91581 /* shell-app-manifest.json */,
+				B5DB047F1F3A684600E91581 /* shell-app.bundle */,
+				B5CFBF4E1EDE419400B4BE24 /* EXBuildConstants.plist */,
+				B501732A1DC01252003445D9 /* EXShell.plist */,
+				B56386661DB9994300A0598C /* EXSDKVersions.plist */,
+				B563865C1DB96A5E00A0598C /* Info.plist */,
+				B563865E1DB96A5E00A0598C /* main.m */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		D234B0C24D8145C4A19CE6F1 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0467C73F24195900001AA438 /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0467C74C24195900001AA438 /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				0467C73C24195900001AA438 /* Sources */,
+				0467C73D24195900001AA438 /* Frameworks */,
+				0467C73E24195900001AA438 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtension;
+			productReference = 0467C74024195900001AA438 /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B56386401DB9693800A0598C /* fastapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "fastapp" */;
+			buildPhases = (
+				23539343DCC44EF8449429EE /* [CP] Check Pods Manifest.lock */,
+				B5722AD01DFB7E3F0084848F /* Prepare Expo */,
+				B563863D1DB9693800A0598C /* Sources */,
+				B563863E1DB9693800A0598C /* Frameworks */,
+				B563863F1DB9693800A0598C /* Resources */,
+				AA38385B7D8D0854176B72FC /* [CP] Copy Pods Resources */,
+				19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */,
+				0467C7232419542F001AA438 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0467C74A24195900001AA438 /* PBXTargetDependency */,
+			);
+			name = fastapp;
+			productName = fastapp;
+			productReference = B56386411DB9693800A0598C /* fastapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B56386391DB9693800A0598C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 900;
+				ORGANIZATIONNAME = "650 Industries, Inc.";
+				TargetAttributes = {
+					0467C73F24195900001AA438 = {
+						CreatedOnToolsVersion = 11.3.1;
+						DevelopmentTeam = 9VC26VBM78;
+						ProvisioningStyle = Automatic;
+					};
+					B56386401DB9693800A0598C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9VC26VBM78;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B563863C1DB9693800A0598C /* Build configuration list for PBXProject "fastapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = B56386381DB9693800A0598C;
+			productRefGroup = B56386421DB9693800A0598C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B56386401DB9693800A0598C /* fastapp */,
+				0467C73F24195900001AA438 /* ShareExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0467C73E24195900001AA438 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0467C74F24195B23001AA438 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B563863F1DB9693800A0598C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5693E911FABD46800307FA4 /* launch_background_image.png in Resources */,
+				B501732B1DC01252003445D9 /* EXShell.plist in Resources */,
+				B5CFBF4F1EDE419400B4BE24 /* EXBuildConstants.plist in Resources */,
+				B56386671DB9994300A0598C /* EXSDKVersions.plist in Resources */,
+				B5693E921FABD46800307FA4 /* launch_icon.png in Resources */,
+				B5693E8E1FABD16A00307FA4 /* LaunchScreen.xib in Resources */,
+				B5DB04801F3A684600E91581 /* shell-app-manifest.json in Resources */,
+				B5DB04811F3A684600E91581 /* shell-app.bundle in Resources */,
+				B56386511DB9693800A0598C /* Assets.xcassets in Resources */,
+				9A79EC04B6594547942D271B /* AntDesign.ttf in Resources */,
+				8F71577B6201403D9ADF9A74 /* Entypo.ttf in Resources */,
+				95F5673A16CD4B5787722773 /* EvilIcons.ttf in Resources */,
+				39B151230AB94DABAB6B6E68 /* Feather.ttf in Resources */,
+				7F08DF96A0284625AA16B888 /* FontAwesome.ttf in Resources */,
+				F9B00B6807044F149C3DB935 /* FontAwesome5_Brands.ttf in Resources */,
+				6D49F523215F48A880CA3179 /* FontAwesome5_Regular.ttf in Resources */,
+				16B262D00C834C29B2D33E88 /* FontAwesome5_Solid.ttf in Resources */,
+				94DDBA22FCFD4FCA9E85E86E /* Fontisto.ttf in Resources */,
+				BEF082CCAB5D437B847DFBB0 /* Foundation.ttf in Resources */,
+				B8439B49EB5C446E80E51932 /* Ionicons.ttf in Resources */,
+				6B9C91276C724F9991E2DFCE /* MaterialCommunityIcons.ttf in Resources */,
+				2932CD8255AE4D43B82411C3 /* MaterialIcons.ttf in Resources */,
+				F170D1827399447A8F45D4C4 /* Octicons.ttf in Resources */,
+				4F50AF0AF64D48E69D6E1413 /* Roboto_medium.ttf in Resources */,
+				64688F468C9A45E2A647058A /* Roboto.ttf in Resources */,
+				371439553826482E91AFA88E /* rubicon-icon-font.ttf in Resources */,
+				0CCBED9F00834D2F88E30F09 /* SimpleLineIcons.ttf in Resources */,
+				706CB59EEF284809BA9CC291 /* Zocial.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D233B7204FDD7D0087ED51 /* Bundle Expo Assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle Expo Assets";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eo pipefail\n\nif [ \"$CONFIGURATION\" == \"Debug\" ]; then\n  echo \"Skipping asset bundling in debug mode.\"\n  exit 0\nfi\n\npushd \"${SRCROOT}/..\"\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\ndest=\"$CONFIGURATION_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH\"\nexpo bundle-assets --platform ios --dest \"$dest\"\npopd\n";
+		};
+		23539343DCC44EF8449429EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fastapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA38385B7D8D0854176B72FC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fastapp/Pods-fastapp-resources.sh",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/api.amplitude.com.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaCA.der",
+				"${PODS_ROOT}/Amplitude-iOS/Amplitude/ComodoRsaDomainValidationCA.der",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/api.amplitude.com.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoCaLimitedRsaCertificationAuthority.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ComodoRsaDomainValidationCA.der",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fastapp/Pods-fastapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5722AD01DFB7E3F0084848F /* Prepare Expo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Prepare Expo";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -eo pipefail\n\nexport PATH=\"$(if [ -f ~/.expo/PATH ]; then echo $PATH:$(cat ~/.expo/PATH); else echo $PATH; fi)\"\nexpo prepare-detached-build --platform ios \"${SRCROOT}/..\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0467C73C24195900001AA438 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0467C74424195900001AA438 /* ShareViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B563863D1DB9693800A0598C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B56386611DB96A5E00A0598C /* main.m in Sources */,
+				B56386491DB9693800A0598C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0467C74A24195900001AA438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0467C73F24195900001AA438 /* ShareExtension */;
+			targetProxy = 0467C74924195900001AA438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0467C74524195900001AA438 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0467C74624195900001AA438 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0467C74D24195900001AA438 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VC26VBM78;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexperts.fastapp.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0467C74E24195900001AA438 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = ShareExtension/ShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9VC26VBM78;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ShareExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexperts.fastapp.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B56386561DB9693800A0598C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		B56386571DB9693800A0598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B56386591DB9693800A0598C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1548D9E4CB1AEFA5CCAE6D /* Pods-fastapp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fastapp/fastapp.entitlements;
+				DEVELOPMENT_TEAM = 9VC26VBM78;
+				INFOPLIST_FILE = "$(SRCROOT)/fastapp/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexperts.fastapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B563865A1DB9693800A0598C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47FE4D7F70906B7DC8CE39B /* Pods-fastapp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fastapp/fastapp.entitlements;
+				DEVELOPMENT_TEAM = 9VC26VBM78;
+				INFOPLIST_FILE = "$(SRCROOT)/fastapp/Supporting/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vrexperts.fastapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0467C74C24195900001AA438 /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0467C74D24195900001AA438 /* Debug */,
+				0467C74E24195900001AA438 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B563863C1DB9693800A0598C /* Build configuration list for PBXProject "fastapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56386561DB9693800A0598C /* Debug */,
+				B56386571DB9693800A0598C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B56386581DB9693800A0598C /* Build configuration list for PBXNativeTarget "fastapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B56386591DB9693800A0598C /* Debug */,
+				B563865A1DB9693800A0598C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B56386391DB9693800A0598C /* Project object */;
+}
