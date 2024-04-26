@@ -1,6 +1,6 @@
 # Mobile App for Reporter - README
 
-Welcome to the Mobile App for Reporter README! This application is designed to empower reporters to securely and efficiently send news stories along with their attached media files to the news channel. With a user-friendly interface, it ensures ease of use for reporters from various areas while providing a secure platform for transmitting sensitive information. Let's explore the features and installation instructions below.
+Welcome to the Mobile App for Reporter README! This application is designed to empower reporters to securely and efficiently send news stories along with their attached media files to the news channel. With a user-friendly interface, it ensures ease of use for reporters from various areas while providing a secure platform for transmitting sensitive information. Let's explore the features below.
 
 ## Features
 
